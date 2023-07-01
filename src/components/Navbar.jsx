@@ -77,7 +77,7 @@ const Navbar = () => {
                   font-medium font-poppings
                   cursor-pointer`}
                   onClick={() => {
-                    setSidebar(true); {/* you could also use setSidebar(!Sidebar) */}
+                    setSidebar(!Sidebar); {/* you could also use setSidebar(!Sidebar) */}
                     setActive(link.title)
                   }}
                 >
