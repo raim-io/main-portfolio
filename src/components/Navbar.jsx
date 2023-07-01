@@ -27,9 +27,15 @@ const Navbar = () => {
           <img src={logo} alt="logo-text"
           className='w-45 h-20 object-contain'
           />
-          <p className='text-white text-[18px] font-bold cursor-pointer'>|| SWE
-            <span className='sm:block hidden'>|| DevOps</span>
+
+          <div>
+          <p className='text-white text-[18px] font-bold cursor-pointer'>
+            || SWE
           </p>
+          <p className='text-white text-[18px] font-bold cursor-pointer'>
+            || DevOps
+          </p>
+          </div>
         </Link>
         <ul
           className='list-none hidden sm:flex flex-row gap-10'
