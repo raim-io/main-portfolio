@@ -9,7 +9,7 @@ const Navbar = () => {
 
   // keep track of the current position on screen
   const [Active, setActive] = useState("");
-  const [Sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
 
 
   return (
@@ -25,14 +25,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}>
           <img src={logo} alt="logo-text"
-          className='w-45 h-20 object-contain'
+          className='w-40 h-20 object-contain'
           />
 
           <div>
-          <p className='text-white text-[18px] font-bold cursor-pointer'>
+          <p className='text-white text-[18px] font-semibold cursor-pointer'>
             || SWE
           </p>
-          <p className='text-white text-[18px] font-bold cursor-pointer'>
+          <p className='text-white text-[18px] font-semibold cursor-pointer'>
             || DevOps
           </p>
           </div>
@@ -59,12 +59,12 @@ const Navbar = () => {
         
         {/* mobile navigation view */}
         <div className='sm:hidden flex flex-1 justify-end items-end items-center'>
-          <img src={Sidebar ? close : menu} alt="side-bar"
+          <img src={sidebar ? close : menu} alt="side-bar"
             className='w-[22px] h-[22px] cursor-pointer object-contain'
-            onClick={() => setSidebar(!Sidebar)}
+            onClick={() => setSidebar(!sidebar)}
           />
 
-          <div className={`${!Sidebar ? 'hidden' : 'flex'} p-6 absolute top-20 right-0 black-gradient mx-4 min-w-[150px] rounded-xl`}>
+          <div className={`${!sidebar ? 'hidden' : 'flex'} p-6 absolute top-20 right-0 black-gradient mx-4 min-w-[150px] rounded-xl`}>
             <ul
               className='list-none flex justify-end items-start flex-col gap-4'
             >
@@ -77,7 +77,7 @@ const Navbar = () => {
                   font-medium font-poppings
                   cursor-pointer`}
                   onClick={() => {
-                    setSidebar(!Sidebar); {/* you could also use setSidebar(!Sidebar) */}
+                    setSidebar(!sidebar); {/* you could also use setSidebar(!Sidebar) */}
                     setActive(link.title)
                   }}
                 >

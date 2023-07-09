@@ -42,8 +42,8 @@ const About = () => {
   return (
     <>
     <motion.div variants={textVariant()}>
-    <p className='{styles.sectionSubtext}'>
-    INTRODUCTION
+    <p className={styles.sectionSubText}>
+    About me?
     </p>
     <h2 className={styles.sectionHeadText}>
     Overview</h2>
@@ -68,7 +68,7 @@ const About = () => {
       </motion.p>
 
       <div
-        className='mt-20 flex flex-wrap gap-10'
+        className='mt-20 flex flex-wrap gap-10 justify-center'
       >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
