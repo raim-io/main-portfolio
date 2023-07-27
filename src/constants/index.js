@@ -1,4 +1,9 @@
 import {
+  githubProfile,
+  gitlab,
+  instagram,
+  linkedin,
+  twitter,
   mobile,
   backend,
   creator,
@@ -39,6 +44,34 @@ export const navLinks = [
     title: "Contact",
   },
 ];
+
+export const socials = [
+  {
+    id: "linkedin",
+    url: "https://www.linkedin.com/in/raheem-isaac/",
+    icon: linkedin,
+  },
+  {
+    id: "twitter",
+    url: "https://twitter.com/raim_io",
+    icon: twitter,
+  },
+  {
+    id: "github",
+    url: "https://github.com/raim-io",
+    icon: githubProfile,
+  },
+  {
+    id: "gitlab",
+    url: "http://gitlab.com/raim.io",
+    icon: gitlab,
+  },
+  {
+    id: "instagram",
+    url: "https://instagram.com/raim.io",
+    icon: instagram,
+  },
+]
 
 const services = [
   {
@@ -155,11 +188,11 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Hardworking, honest, and passionate, all you need in an employee. Always ready to take on complicated tasks and prove everyone wrong. Keep it up.",
+    name: "Ismail Adedamola",
+    designation: "CEO",
+    company: "AUTODAMS Nig.",
+    image: "https://media.licdn.com/dms/image/C5603AQG9tqkjOQgc_Q/profile-displayphoto-shrink_800_800/0/1648905982893?e=2147483647&v=beta&t=x64Q8Szvh6kHzDVYqqeJttOq5Bh-o1RLjlAQWYjicVE",
   },
 ];
 

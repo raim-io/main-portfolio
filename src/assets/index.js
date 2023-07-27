@@ -1,3 +1,9 @@
+import githubProfile from "./socials/github.png";
+import gitlab from "./socials/gitlab.png";
+import instagram from "./socials/instagram.png";
+import linkedin from "./socials/linkedin.png";
+import twitter from "./socials/twitter.png";
+
 import logo from "./raim_io-logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -29,9 +35,15 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import { socials } from "../constants";
 
 export {
   logo,
+  githubProfile,
+  gitlab,
+  instagram,
+  linkedin,
+  twitter,
   backend,
   creator,
   mobile,

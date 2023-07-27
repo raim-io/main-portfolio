@@ -1,0 +1,32 @@
+{/*
+      isDesktop &&
+        <>
+          <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
+            <div className='justify-center items-center flex flex-col mt-5'>
+              <div className='w-5 h-5 rounded-full bg-[#24c7a4]' />
+              <div className='w-1 sm:h-80 h-40 violet-gradient'/>
+            </div>
+
+            <div>
+              <h1 className={`${styles.heroHeadText} text-white`}>
+                Hi, I'm <span className='text-[#24c7a4]'>Raheem</span>
+              </h1>
+              <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+                Unleashing creativity by transforming <br className='sm:block hidden'/>visions into captivating realities...
+              </p>
+            </div>
+
+            {/* render logo */}
+            <div className='w-15 h-15 items-center justify-end'>
+              <img src="./logo_transparent.png" alt="logo" />
+            </div>
+          </div>
+
+          <ComputersCanvas />
+        </>
+      }
+
+      {/* <div className='absolute'>
+      {isDesktop && <ComputersCanvas />}
+      {!isDesktop && <p>hello there</p>}
+    </div> */}

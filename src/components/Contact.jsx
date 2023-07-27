@@ -66,7 +66,7 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)}
       >
         <p className={styles.sectionSubText}>
-          Get in touch with me
+          Wanna in touch with me??
         </p>
         <h3 className={styles.sectionHeadText}>
           Contact

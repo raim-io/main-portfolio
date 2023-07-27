@@ -42,7 +42,7 @@ const ComputersCanvas = () => {
   // establish useState to set value for mobile view
   const [isMobile, setIsMobile] = useState(false)
 
-  //change isMobile variale
+  //change isMobile variable
   useEffect(() => {
     //establish variable to listen to screen size changes
     const mediaQuery = window.matchMedia('(max-width: 700px)');

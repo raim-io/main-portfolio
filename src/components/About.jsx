@@ -10,12 +10,12 @@ const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div
-        className='w-full green-pink-gradient p-[1px] shadow-card rounded-[20px]'
+        className='w-full green-pink-gradient p-[1px] shadow-card rounded-[5px]'
         variants={fadeIn("right", "spring", 0.5 * index, 0.7)}
       >
         
         <div
-          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col items-center justify-evenly'
+          className='bg-tertiary rounded-[5px] py-5 px-12 min-h-[280px] flex flex-col items-center justify-evenly'
           options={{
             scale: 1,
             speed: 450,
@@ -41,12 +41,12 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-    <motion.div variants={textVariant()}>
+    <motion.div variants={textVariant()} className='mt-5'>
     <p className={styles.sectionSubText}>
-    About me?
+    Wanna know more about me??
     </p>
     <h2 className={styles.sectionHeadText}>
-    Overview</h2>
+    Summary</h2>
     </motion.div>
     
       <motion.p variants={fadeIn("", "", 0.1, 1)}

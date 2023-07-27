@@ -13,7 +13,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
       <Tilt
-        className='w-full p-5 bg-tertiary rounded-2xl sm:w-[360px]'
+        className='w-full p-5 bg-tertiary rounded-[5px] sm:w-[360px]'
         options={{
           max: 45,
           scale: 1,
@@ -21,7 +21,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         }}
       >
         <div className='w-full relative h-[250px]'>
-          <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
+          <img src={image} alt={name} className='w-full h-full object-cover rounded-[5px]' />
           
           <div className='absolute flex justify-end m-3 inset-0 card-img_hover gap-1'>
 
@@ -73,7 +73,7 @@ const Works = () => {
         <p
           className={styles.sectionSubText}
         >
-          My works?
+          Wanna see my works??
         </p>
         <h2
           className={styles.sectionHeadText}
