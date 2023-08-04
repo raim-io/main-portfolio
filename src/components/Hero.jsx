@@ -23,10 +23,10 @@ const Hero = () => {
 
           <div className='flex flex-col'>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span className='text-[#24c7a4]'>Raheem</span>
+              SWE <span className='text-[#24c7a4]'>||</span> DevOps
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              Unleashing creativity by transforming <br className='sm:block hidden'/>visions into captivating realities...
+              Hi, I'm Raheem Oluwatobiloba, <br className='sm: block hidden'/>unleashing creativity by transforming <br className='sm:block hidden'/>visions into captivating realities...
             </p>
 
             <div className='mt-10'>
@@ -36,9 +36,7 @@ const Hero = () => {
                 {socials.map((social, id) => (
                   <li
                     key={ social.id }
-                    className='hover:text-white hover:text-[19px] text-[18px]
-                    font-medium
-                    cursor-pointer'
+                    className='hover:text-white cursor-pointer'
                   >
                     <a href={social.url} target="_blank">
                       <img src={social.icon} alt={id} className='object-contain h-10 w-10 hover:opacity-50'/>
@@ -52,8 +50,8 @@ const Hero = () => {
         </div>
 
         {/* render logo div */}
-        <div className='relative flex items-center'>
-          <Canvas
+        <div className='relative flex justify-center items-center'>
+          {/* <Canvas
             camera={{fov: 25, position: [5, 5, 5]}}
           >
             <OrbitControls
@@ -68,13 +66,13 @@ const Hero = () => {
               />
               <MeshDistortMaterial />
             </OrbitControls>
-          </Canvas>
-          <img src="./logo_transparent.png" alt="logo" className='w-[400px] h-[400px] md:w-200px md:h-100px object-contain top-0 bottom-0 right-0 left-0 m-auto animate-bouncing' />
+          </Canvas> */}
+          <img src="./logo_transparent.png" alt="logo" className='w-[400px] h-[400px] md:w-200px md:h-100px object-contain top-0 bottom-0 right-0 left-0 m-auto animate-bouncing1' />
         </div>
       </div>
 
       {/* render scroller */}
-      <div className='absolute hidden sm:flex w-full justify-center bottom-5'>
+      <div className='absolute hidden sm:flex w-full justify-center bottom-0 xl:bottom-20 md:-bottom-20'>
         <a href="#about">
           <div className='rounded-3xl border-2 border-secondary w-[21px] h-[50px] flex items-start justify-center p-1'>
 

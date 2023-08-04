@@ -2,7 +2,7 @@ import React from 'react'
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
-import { github } from '../assets'
+import { github, website } from '../assets'
 import { Tilt } from 'react-tilt'
 import { fadeIn, textVariant } from '../utils/motion'
 import { motion } from 'framer-motion'
@@ -30,16 +30,16 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
               onClick={() => window.open(source_code_link, "_blank")}
             >
               <img src={github} alt="GitHub"
-                className='w-1/2 h-1/2 object-contain'
+                className='object-contain'
               />
             </div>
             
             {/* live url icon */}
-            <div className='flex black-gradient w-10 h-10 rounded-full cursor-pointer items-center justify-center'
+            <div className='flex bg-white w-10 h-10 rounded-full cursor-pointer items-center justify-center'
               onClick={() => window.open(source_code_link, "_blank")}
             >
-              <img src={github} alt="GitHub"
-                className='w-1/2 h-1/2 object-contain'
+              <img src={website} alt="GitHub"
+                className='object-contain'
               />
             </div>
           </div>

@@ -62,7 +62,7 @@ const Contact = () => {
   
   return (
     <div className='mb-20 xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden h-auto'>
-      <motion.div className='p-8 bg-black-100 rounded-2xl flex-[0.75]'
+      <motion.div className='p-8 bg-black-100 rounded-xl flex-[0.75]'
         variants={slideIn('left', 'tween', 0.2, 1)}
       >
         <p className={styles.sectionSubText}>
@@ -89,7 +89,7 @@ const Contact = () => {
             <span className='font-medium text-white mb-4'>
               E-mail
             </span>
-            <input type='email' name='email' value={form.email} onChange={handleChange} placeholder="Enter your email e.g johndoe@example.com"
+            <input type='email' name='email' value={form.email} onChange={handleChange} placeholder="e.g johndoe@example.com"
               className='py-4 px-6 bg-tertiary text-white font-medium rounded-lg border-none outline-none placeholder:text-secondary'
             >
             </input>

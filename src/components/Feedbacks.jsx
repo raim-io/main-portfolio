@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from '../utils/motion'
 
 const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => (
   <motion.div
-    className='p-10 bg-black-200 rounded-3xl w-full xs:w-[320px]'
+    className='p-10 bg-black-200 rounded-[5px] w-full xs:w-[320px]'
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
   >
     <p className='text-[48px] text-white font-black'>
@@ -38,7 +38,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
 
 const Feedbacks = () => {
   return (
-    <div className='bg-black-100 rounded-[20px] mt-12'>
+    <div className='bg-black-100 rounded-[5px] mt-12'>
       <div className={`${styles.padding} bg-tertiary min-h-[300px] rounde-[2xl]`}>
         <motion.div variants={textVariant}>
           <p className={styles.sectionSubText}>

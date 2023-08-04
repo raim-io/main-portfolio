@@ -2,19 +2,16 @@ import React from 'react'
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { technologies } from '../constants'
-import { BallCanvas } from './canvas'
 
 const Tech = () => {
   return (
-    <div
-      className='flex flex-row flex-wrap justify-center gap-10'
-    >
+    <div className='flex flex-row flex-wrap justify-center gap-10'>
       {technologies.map((technology, index) => (
         <div
           key={technology.name}
-          className='w-28 h-28'
+          className='w-28 h-28 animate-bouncing2'
         >
-          <BallCanvas icon={technology.icon} />
+          <img src={technology.icon} />
         </div>
       ))}
     </div>

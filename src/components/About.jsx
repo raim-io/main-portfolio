@@ -8,7 +8,7 @@ import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className='xs:w-[250px] w-full'>
+    <Tilt className='w-full xs:w-[200px]'>
       <motion.div
         className='w-full green-pink-gradient p-[1px] shadow-card rounded-[5px]'
         variants={fadeIn("right", "spring", 0.5 * index, 0.7)}

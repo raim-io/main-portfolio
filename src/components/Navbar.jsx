@@ -28,14 +28,6 @@ const Navbar = () => {
           className='w-40 lg:w-50 xl:w-50 md:w-50 h-20 object-contain'
           />
 
-          {/* <div>
-          <p className='text-white text-[18px] font-semibold cursor-pointer'>
-            || SWE
-          </p>
-          <p className='text-white text-[18px] font-semibold cursor-pointer'>
-            || DevOps
-          </p>
-          </div> */}
         </Link>
         <ul
           className='list-none hidden sm:flex flex-row gap-10'
@@ -45,7 +37,7 @@ const Navbar = () => {
               key={ link.id }
               className={`${Active === link.title ?
                   "text-white" : "text-secondary"
-                } hover:text-white hover:text-[19px] text-[18px]
+                } hover:text-white hover:opacity-50 text-[18px]
               font-medium
               cursor-pointer`}
               onClick={() => setActive(link.title)}

@@ -4,6 +4,9 @@ import {
   instagram,
   linkedin,
   twitter,
+  webDev,
+  devops,
+  techWriter,
   mobile,
   backend,
   creator,
@@ -28,6 +31,12 @@ import {
   jobit,
   tripguide,
   threejs,
+  aws,
+  dO,
+  jenkins,
+  nexus,
+  userMgmt,
+  reactPlanner,
 } from "../assets";
 
 export const navLinks = [
@@ -37,7 +46,7 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Works",
   },
   {
     id: "contact",
@@ -76,15 +85,15 @@ export const socials = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: webDev,
   },
   {
     title: "DevOps engineer",
-    icon: mobile,
+    icon: devops,
   },
   {
     title: "Technical writer",
-    icon: creator,
+    icon: techWriter,
   },
 ];
 
@@ -113,10 +122,10 @@ const technologies = [
   //   name: "Redux Toolkit",
   //   icon: redux,
   // },
-  // {
-  //   name: "Tailwind CSS",
-  //   icon: tailwind,
-  // },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
   {
     name: "Node JS",
     icon: nodejs,
@@ -130,7 +139,7 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   // {
@@ -138,8 +147,24 @@ const technologies = [
   //   icon: figma,
   // },
   {
-    name: "docker",
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Digital Ocean",
+    icon: dO,
+  },
+  {
+    name: "Nexus",
+    icon: nexus,
+  },
+  {
+    name: "Docker",
     icon: docker,
+  },
+  {
+    name: "Jenkins",
+    icon: jenkins,
   },
 ];
 
@@ -198,46 +223,48 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "User Management System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A web application that enables the creation of a user, deleting user details as well as updating user details. It is an implementation of CRUD abilities using the ejs view engine and express backend",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "EJS",
+        color: "text-white",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "Express",
+        color: "text-white",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "Mongodb",
+        color: "text-white",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: userMgmt,
+    source_code_link: "https://github.com/raim-io/ejs-user_management-crud_application.git",
+    site_link: "",
   },
   {
-    name: "Job IT",
+    name: "Planner App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web-based platform that allows users create a plan using widgets. Backed with date, time, Reminder, and stop-watch functionalities.",
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: "text-white",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: "react-dom",
+        color: "text-white",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "web-vitals",
+        color: "text-white",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: reactPlanner,
+    source_code_link: "https://github.com/raim-io/react-planner-app.git",
+    site_link: "https://raim-planner-app.netlify.app/",
   },
 ];
 
