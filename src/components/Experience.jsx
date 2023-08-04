@@ -18,7 +18,9 @@ const ExperienceCard = ({ experience, index }) => (
       <div
         className='w-full h-full items-center justify-center flex'
       >
-        <img src={experience.icon} alt={experience.company_name}
+        <img
+          src={experience.icon}
+          alt={experience.company_name}
           className='object-contain w-[60%] h-[60%]'
         />
       </div>
@@ -61,7 +63,7 @@ const Experience = () => {
         <p
           className={styles.sectionSubText}
         >
-          What have I been up to?
+          What have I been up to??
         </p>
         <h2
           className={styles.sectionHeadText}

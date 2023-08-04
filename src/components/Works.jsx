@@ -21,27 +21,15 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         }}
       >
         <div className='w-full relative h-[250px]'>
-          <img src={image} alt={name} className='w-full h-full object-cover rounded-[5px]' />
+          <img 
+            src={image} 
+            alt={name} 
+            className='w-full h-full object-cover rounded-[5px]'
+          />
           
-          <div className='absolute flex justify-end m-3 inset-0 card-img_hover gap-1'>
-
-            {/* remote repository icon */}
-            <div className='flex black-gradient w-10 h-10 rounded-full cursor-pointer items-center justify-center'
-              onClick={() => window.open(source_code_link, "_blank")}
-            >
-              <img src={github} alt="GitHub"
-                className='object-contain'
-              />
-            </div>
-            
-            {/* live url icon */}
-            <div className='flex bg-white w-10 h-10 rounded-full cursor-pointer items-center justify-center'
-              onClick={() => window.open(source_code_link, "_blank")}
-            >
-              <img src={website} alt="GitHub"
-                className='object-contain'
-              />
-            </div>
+          <div 
+            className='absolute flex justify-end m-3 inset-0 card-img_hover gap-1'
+          >
           </div>
         </div>
 
@@ -54,12 +42,46 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           </p>
         </div>
 
-        <div className='flex flex-wrap gap-3 mt-3'>
-          {tags.map((tag) => (
-          <p className={`${tag.color} text-[13px]`} key={tag.name}>
-            #{tag.name}
-          </p>
-          ))}
+        <div className='flex justify-between'>
+          <div className='flex flex-wrap gap-3 mt-3'>
+            {tags.map((tag) => (
+              <p 
+                className={`${tag.color} text-[13px]`} 
+                key={tag.name}
+              >
+               {tag.name}* 
+              </p>
+            ))}
+            
+          </div>
+          {/* live url icon */}
+          <div className='flex gap-5'>
+            <div 
+              className='flex bg-white w-10 h-10 rounded-full cursor-pointer items-center justify-center'
+              onClick={
+                () => window.open(site_link, "_blank")
+              }
+            >
+                <img 
+                  src={website} 
+                  alt="Website"
+                  className='object-fit'
+                />
+            </div>
+            {/* remote repository icon */}
+            <div 
+              className='flex black-gradient w-10 h-10 rounded-full cursor-pointer items-center justify-center'
+              onClick={
+                () => window.open(source_code_link, "_blank")
+              }
+            >
+              <img 
+                src={github} 
+                alt="GitHub"
+                className='object-contain'
+              />
+            </div>
+          </div>
         </div>
       </Tilt>
     </motion.div>

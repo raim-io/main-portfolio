@@ -1,9 +1,12 @@
 import {
+  // profile icons
   githubProfile,
   gitlab,
   instagram,
   linkedin,
   twitter,
+
+  // skills icons
   webDev,
   devops,
   techWriter,
@@ -11,6 +14,8 @@ import {
   backend,
   creator,
   web,
+
+  // tech stack icons
   javascript,
   typescript,
   html,
@@ -23,22 +28,27 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   aws,
   dO,
   jenkins,
   nexus,
+
+  // experience icons
+  meta,
+  starbucks,
+  tesla,
+  shopify,
+
+  // project images
   userMgmt,
   reactPlanner,
+   carrent,
+  jobit,
+  tripguide,
 } from "../assets";
 
+// navigation links
 export const navLinks = [
   {
     id: "about",
@@ -54,6 +64,7 @@ export const navLinks = [
   },
 ];
 
+// social profiles
 export const socials = [
   {
     id: "linkedin",
@@ -82,6 +93,8 @@ export const socials = [
   },
 ]
 
+
+// services or skills
 const services = [
   {
     title: "Web Developer",
@@ -97,6 +110,7 @@ const services = [
   },
 ];
 
+// tech stack
 const technologies = [
   {
     name: "HTML 5",
@@ -168,33 +182,8 @@ const technologies = [
   },
 ];
 
+// experiences/history of work
 const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
   {
     title: "Full stack Developer",
     company_name: "Meta",
@@ -210,6 +199,7 @@ const experiences = [
   },
 ];
 
+// feeabacks/testimonials
 const testimonials = [
   {
     testimonial:
@@ -221,6 +211,7 @@ const testimonials = [
   },
 ];
 
+// projects or works
 const projects = [
   {
     name: "User Management System",

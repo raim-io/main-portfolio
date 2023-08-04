@@ -3,13 +3,10 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { socials } from '../constants'
 import { ComputersCanvas } from './canvas'
-import DisplayContext from './DisplayContext'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei'
 
 const Hero = () => {
-  const isDesktop = useContext(DisplayContext);
-
   return (
     <section className='relative w-full h-screen mx-auto bottom-0'>
       {/* text and logo */}
@@ -23,7 +20,9 @@ const Hero = () => {
 
           <div className='flex flex-col'>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              SWE <span className='text-[#24c7a4]'>||</span> DevOps
+              SWE 
+              <span className='text-[#24c7a4]'> || </span> 
+              DevOps
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
               Hi, I'm Raheem Oluwatobiloba, <br className='sm: block hidden'/>unleashing creativity by transforming <br className='sm:block hidden'/>visions into captivating realities...
@@ -39,7 +38,11 @@ const Hero = () => {
                     className='hover:text-white cursor-pointer'
                   >
                     <a href={social.url} target="_blank">
-                      <img src={social.icon} alt={id} className='object-contain h-10 w-10 hover:opacity-50'/>
+                      <img 
+                        src={social.icon} 
+                        alt={id} 
+                        className='object-contain h-10 w-10 hover:opacity-50'
+                      />
                     </a>
                   </li>
                 ))}
@@ -72,9 +75,13 @@ const Hero = () => {
       </div>
 
       {/* render scroller */}
-      <div className='absolute hidden sm:flex w-full justify-center bottom-0 xl:bottom-20 md:-bottom-20'>
+      <div 
+        className='absolute hidden sm:flex w-full justify-center bottom-0 xl:bottom-20 md:-bottom-20'
+      >
         <a href="#about">
-          <div className='rounded-3xl border-2 border-secondary w-[21px] h-[50px] flex items-start justify-center p-1'>
+          <div 
+            className='rounded-3xl border-2 border-secondary w-[21px] h-[50px] flex items-start justify-center p-1'
+          >
 
             <motion.div  
               animate={{

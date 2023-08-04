@@ -22,7 +22,9 @@ const ServiceCard = ({ index, title, icon }) => {
             max: 45
           }}
         >
-          <img src={icon} alt={title}
+          <img
+            src={icon}
+            alt={title}
             className='w-16 h-16 object-contain'
           />
           <h3
@@ -41,16 +43,22 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-    <motion.div variants={textVariant()} className='mt-5'>
-    <p className={styles.sectionSubText}>
-    Wanna know more about me??
-    </p>
-    <h2 className={styles.sectionHeadText}>
-    Summary</h2>
+      <motion.div
+        variants={textVariant()}
+        className='mt-5'
+      >
+      <p className={styles.sectionSubText}>
+        Wanna know more about me??
+      </p>
+      <h2 className={styles.sectionHeadText}>
+        Summary
+      </h2>
     </motion.div>
     
-      <motion.p variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[16px] max-width-3xl leading-[30px]'>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-secondary text-[16px] max-width-3xl leading-[30px]'
+      >
         Fueling my passion for technology and coding,
         I embark on a relentless quest for growth and
         strive to succeed in my professional journey.
@@ -71,7 +79,11 @@ const About = () => {
         className='mt-20 flex flex-wrap gap-10 justify-center'
       >
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard
+            key={service.title}
+            index={index}
+            {...service}
+          />
         ))}
       </div>
     </>

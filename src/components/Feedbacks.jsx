@@ -21,14 +21,16 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
       <div className='flex items-center justify-between mt-7 gap-1'>
         <div className='flex flex-1 flex-col'>
           <p className='text-[16px] text-white font-medium'>
-            <span className='blue-text-gradient'>@</span> {name}
+            <span className='text-[#24c7a4]'>@</span> {name}
           </p>
           <p className='text-[12px] text-secondary mt-1'>
             {designation} of {company}
           </p>
         </div>
 
-        <img src={image} alt={`feedback-by-${name}`}
+        <img 
+          src={image} 
+          alt={`feedback-by-${name}`}
           className='w-12 h-12 rounded-full object-contain'
         />
       </div>
@@ -45,14 +47,20 @@ const Feedbacks = () => {
             what they say about me??
           </p>
           <h2 className={styles.sectionHeadText}>
-            Testimonials
+            Feedbacks
           </h2>
         </motion.div>
       </div>
 
-          <div className={`${styles.paddingX} flex flex-wrap gap-7 -mt-20 pb-14 justify-center`}>
+          <div 
+            className={`${styles.paddingX} flex flex-wrap gap-7 -mt-20 pb-14 justify-center`}
+          >
             {testimonials.map((testimonial, index) => (
-              <FeedbackCard index={index} key={testimonial.name} {...testimonial} />
+              <FeedbackCard 
+                index={index} 
+                key={testimonial.name} 
+                {...testimonial} 
+              />
             ))}
           </div>
     </div>
