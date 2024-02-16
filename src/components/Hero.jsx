@@ -8,24 +8,20 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei'
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto bottom-0'>
+    <section className='relative w-full h-full mx-auto bottom-0'>
       {/* text and logo */}
       <div className='mt-5 flex xl:flex-row flex-col-reverse justify-center items-center'>
         {/* text div */}
-        <div className={`${styles.paddingX} flex items-center gap-5`}>
-          <div className='justify-center items-center flex flex-col mt-5'>
-            <div className='w-5 h-5 rounded-full bg-[#24c7a4]' />
-            <div className='w-1 sm:h-80 h-40 violet-gradient'/>
-          </div>
+        <div className={`${styles.paddingX} flex items-center justify-center gap-5`}>
 
           <div className='flex flex-col'>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              SWE 
+              Backend
               <span className='text-[#24c7a4]'> || </span> 
               DevOps
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              Hi, I'm Raheem Oluwatobiloba, <br className='sm: block hidden'/>unleashing creativity by transforming <br className='sm:block hidden'/>visions into captivating realities...
+              Hello, <br /> I'm Raheem Oluwatobiloba
             </p>
 
             <div className='mt-10'>
@@ -76,7 +72,7 @@ const Hero = () => {
 
       {/* render scroller */}
       <div 
-        className='absolute hidden sm:flex w-full justify-center bottom-0 xl:bottom-20 md:-bottom-20'
+        className='absolute hidden sm:flex w-full justify-center sm:-bottom-20 xl:-bottom-30 md:-bottom-20'
       >
         <a href="#about">
           <div 

@@ -61,12 +61,9 @@ const Contact = () => {
   }
   
   return (
-    <div
-      className='mb-20 xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden h-auto'
-    >
       <motion.div
         className='p-8 bg-black-100 rounded-xl flex-[0.75]'
-        variants={slideIn('right', 'tween', 0.2, 1)}
+        variants={slideIn('bottom', 'tween', 0.2, 1)}
       >
         <p className={styles.sectionSubText}>
           Wanna get in touch with me??
@@ -133,14 +130,6 @@ const Contact = () => {
         </form>
 
       </motion.div>
-
-      <motion.div
-        className='h-[350px] md:h-[550px] xl:h-auto xl:flex-1'
-        variants={slideIn('left', 'tween', 0.2, 1)}
-      >
-        <EarthCanvas />
-      </motion.div>
-    </div>
   )
 }
 

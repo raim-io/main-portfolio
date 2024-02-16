@@ -59,14 +59,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[16px] max-width-3xl leading-[30px]'
       >
-        Fueling my passion for technology and coding,
-        I embark on a relentless quest for growth and
+        Fueling my passion for technology, I embark on a relentless quest for growth and
         strive to succeed in my professional journey.
         With a deep love for innovation and problem-solving,
         I spend most of my days constantly learning,
         staying up to date with the latest trends in the
         dynamic tech industry, and honing my skills to
-        deliver high-quality solutions in some fields like DevOps.
+        deliver high-quality solutions in fields DevOps.
         <br />
         I seek opportunities to expand my knowledge, collaborate
         with like-minded professionals, and contribute to

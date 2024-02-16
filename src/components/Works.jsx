@@ -15,9 +15,9 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
       <Tilt
         className='w-full p-5 bg-tertiary rounded-[5px] sm:w-[360px]'
         options={{
-          max: 45,
+          max: 8,
           scale: 1,
-          speed: 400
+          speed: 10
         }}
       >
         <div className='w-full relative h-[250px]'>

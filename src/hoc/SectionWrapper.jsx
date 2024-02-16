@@ -7,7 +7,7 @@ const SectionWrapper = (Component, idName) => {
   
     function HOC() {
         return (
-            <motion.section
+            <section
                 initial="hidden"
                 variants={staggerContainer()}
                 whileInView="show"
@@ -18,7 +18,7 @@ const SectionWrapper = (Component, idName) => {
                     &nbsp;
                 </span>
                 <Component />
-            </motion.section>
+            </section>
         )
     }
 

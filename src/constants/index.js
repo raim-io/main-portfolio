@@ -97,15 +97,15 @@ export const socials = [
 // services or skills
 const services = [
   {
-    title: "Web Developer",
+    title: "Backend Engineering",
     icon: webDev,
   },
   {
-    title: "DevOps engineer",
+    title: "DevOps",
     icon: devops,
   },
   {
-    title: "Technical writer",
+    title: "Technical Writing",
     icon: techWriter,
   },
 ];
@@ -246,10 +246,6 @@ const projects = [
       },
       {
         name: "react-dom",
-        color: "text-white",
-      },
-      {
-        name: "web-vitals",
         color: "text-white",
       },
     ],

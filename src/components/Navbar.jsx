@@ -25,7 +25,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}>
           <img src={logo} alt="logo-text"
-          className='w-40 lg:w-50 xl:w-50 md:w-50 h-20 object-contain'
+          className='w-20 lg:w-30 xl:w-40 h-20 object-contain'
           />
 
         </Link>
